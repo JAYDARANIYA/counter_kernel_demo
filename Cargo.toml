@@ -1,0 +1,20 @@
+[package]
+name = "counter_kernel_demo"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+tezos_smart_rollup_core = { git = "https://gitlab.com/tezos/tezos" }
+tezos_smart_rollup_host = { git = "https://gitlab.com/tezos/tezos" }
+tezos_smart_rollup_debug = { git = "https://gitlab.com/tezos/tezos" }
+tezos_smart_rollup_encoding = { git = "https://gitlab.com/tezos/tezos" }
+tezos_smart_rollup_storage = { git = "https://gitlab.com/tezos/tezos" }
+tezos_smart_rollup_entrypoint = { git = "https://gitlab.com/tezos/tezos" }
+tezos_data_encoding = {version = "0.4.4"}
+serde = { version = "1.0.159", features = ["derive"] }
+tezos_smart_rollup_mock = { git = "https://gitlab.com/tezos/tezos" }
